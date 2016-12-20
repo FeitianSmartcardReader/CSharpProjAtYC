@@ -22,13 +22,16 @@ namespace LuckYicha
         Random r = new Random();
 
         int nowRank = 0;
-        RankMode[] ranks = new RankMode[5];
+//      RankMode[] ranks = new RankMode[5];
+
+        //只有四个奖项
+        RankMode[] ranks = new RankMode[4];
 
         int nowPhone = 0;
         List<string[]> allPhone = new List<string[]>();
 
         //给查找区域使用
-        string[] areas = new string[] {"北京","上海","华北","华东","华南","西南" };
+   //     string[] areas = new string[] {"北京","上海","华北","华东","华南","西南" };
         public static Hashtable phoneArea = new Hashtable();
 
         //定义一个布尔型标记，用来指示是否开始播放动画。
@@ -43,8 +46,8 @@ namespace LuckYicha
         clsMCI stopMp = new clsMCI("sound\\stop.mp3", false);
 
         //恭喜图片，燃烧图片
-        Bitmap gongxi = Properties.Resources.gongxi;
-        Bitmap gongxix = Properties.Resources.gongxix;
+        //Bitmap gongxi = Properties.Resources.gongxi;
+        //Bitmap gongxix = Properties.Resources.gongxix;
 
         Bitmap back1 = Properties.Resources.back1;
         Bitmap back2 = Properties.Resources.back2;
@@ -101,7 +104,8 @@ namespace LuckYicha
             }
             nowRank = 0;
 
-            panel_Click(panel5, null);
+            // panel_Click(panel5, null);
+            panel_Click(panel4, null);
 
             luckPanel.Location = new Point(225, 121);
 
@@ -224,7 +228,7 @@ namespace LuckYicha
                         break;
                     case 51://按下的是下
                         {
-                            if (startEndLab.Text == "开始" && nowRank < 4)
+                            if (startEndLab.Text == "开始" && nowRank < 3)
                             {
                                 nowRank++;
                                 panel_Click(((Panel)this.Controls.Find("panel" + (nowRank + 1), true)[0]), null);
@@ -305,6 +309,7 @@ namespace LuckYicha
         /// <param name="e"></param>
         private void gongxiPicBox_Paint(object sender, PaintEventArgs e)
         {
+/*
             //如果函数首次调用，将执行IF语句中的内容，再次调用时，将不再执行IF中的语句,防止第二次调用Animate()方法。
             if (!current)
             {
@@ -329,6 +334,7 @@ namespace LuckYicha
             {
                 e.Graphics.DrawImage(gongxi, new Point(10, 10));
             }
+*/
         }
 
         /// <summary>
@@ -365,6 +371,7 @@ namespace LuckYicha
                 timer1.Enabled = true;
                 startEndLab.Text = " 停 ";
 
+                //播放音乐
                 startMp.play();
 
                 conStartLab.Enabled = false;
@@ -375,6 +382,7 @@ namespace LuckYicha
                 timer1.Enabled = false;
                 startEndLab.Text = "已停";
 
+                //停止播放音乐
                 stopMp.play();
 
                 areaLab.Text = allPhone[nowPhone][1];
@@ -406,6 +414,8 @@ namespace LuckYicha
             }
             nowPhone = r.Next(allPhone.Count);
             phoneLab.Text = allPhone[nowPhone][0];
+            //phoneLab.Text = "祝  你  幸  运 !";
+
         }
 
         /// <summary>
@@ -424,7 +434,7 @@ namespace LuckYicha
             pictureBox2.Visible = false;
             pictureBox3.Visible = false;
             pictureBox4.Visible = false;
-            pictureBox5.Visible = false;
+            //pictureBox5.Visible = false;
 
             String name = ((Panel)sender).Name;
             nowRank = int.Parse(name.Substring(name.Length - 1, 1)) - 1;
@@ -434,7 +444,7 @@ namespace LuckYicha
 
             p.Visible = true;
 
-            giftPicBox.BackgroundImage = new Bitmap("gift\\" + nowRank + ".png");
+          //  giftPicBox.BackgroundImage = new Bitmap("gift\\" + nowRank + ".png");
 
             phoneLab.Text = "祝  你  幸  运!";
         }
