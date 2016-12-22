@@ -102,7 +102,7 @@
             // phoneLab
             // 
             this.phoneLab.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.phoneLab.AutoSize = true;
+            this.phoneLab.AutoSize = false;
             this.phoneLab.BackColor = System.Drawing.Color.Transparent;
             this.phoneLab.Font = new System.Drawing.Font("STFangsong", 42F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.phoneLab.ForeColor = System.Drawing.Color.Gold;
@@ -111,6 +111,18 @@
             this.phoneLab.Size = new System.Drawing.Size(373, 63);
             this.phoneLab.TabIndex = 2;
             this.phoneLab.Text = "祝  你  幸  运 !";
+            // 
+            // areaLab
+            // 
+            this.areaLab.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.areaLab.AutoSize = true;
+            this.areaLab.BackColor = System.Drawing.Color.Transparent;
+            this.areaLab.Font = new System.Drawing.Font("STFangsong", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.areaLab.ForeColor = System.Drawing.Color.Gold;
+            this.areaLab.Location = new System.Drawing.Point(283, 375);
+            this.areaLab.Name = "areaLab";
+            this.areaLab.Size = new System.Drawing.Size(0, 36);
+            this.areaLab.TabIndex = 23;
             // 
             // timer1
             // 
@@ -135,7 +147,7 @@
             // stateLab
             // 
             this.stateLab.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.stateLab.AutoSize = true;
+            this.stateLab.AutoSize = false;
             this.stateLab.BackColor = System.Drawing.Color.Transparent;
             this.stateLab.Font = new System.Drawing.Font("STFangsong", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.stateLab.ForeColor = System.Drawing.Color.Gold;
@@ -198,18 +210,7 @@
             this.startPanel.Size = new System.Drawing.Size(1055, 850);
             this.startPanel.TabIndex = 7;
             this.startPanel.Visible = false;
-            // 
-            // areaLab
-            // 
-            this.areaLab.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.areaLab.AutoSize = true;
-            this.areaLab.BackColor = System.Drawing.Color.Transparent;
-            this.areaLab.Font = new System.Drawing.Font("STFangsong", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.areaLab.ForeColor = System.Drawing.Color.Gold;
-            this.areaLab.Location = new System.Drawing.Point(283, 375);
-            this.areaLab.Name = "areaLab";
-            this.areaLab.Size = new System.Drawing.Size(0, 36);
-            this.areaLab.TabIndex = 23;
+         
             // 
             // gongxixPicBox
             // 
@@ -267,9 +268,9 @@
             this.luckPeopleLab.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.luckPeopleLab.Location = new System.Drawing.Point(25, 96);
             this.luckPeopleLab.Name = "luckPeopleLab";
-            this.luckPeopleLab.Size = new System.Drawing.Size(559, 248);
+            this.luckPeopleLab.Size = new System.Drawing.Size(62, 31);
             this.luckPeopleLab.TabIndex = 8;
-            this.luckPeopleLab.Text = resources.GetString("luckPeopleLab.Text");
+            this.luckPeopleLab.Text = "彭毅";
             // 
             // luckTitleLab
             // 
