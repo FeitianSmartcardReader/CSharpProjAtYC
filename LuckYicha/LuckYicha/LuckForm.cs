@@ -111,7 +111,7 @@ namespace LuckYicha
 
             Util.writeTxt("res.txt", "\r\n--------------------------------------------------\r\n", true);
 
-            areaLab.Text = "           ";
+            //areaLab.Text = "           ";
 
 
             luckPanel.BringToFront();
@@ -386,7 +386,7 @@ namespace LuckYicha
                 //停止播放音乐
                 stopMp.play();
 
-                areaLab.Text = allPhone[nowPhone][1];
+                //areaLab.Text = allPhone[nowPhone][1];
                 isStart = true;
 
                 //gongxiPicBox.Visible = true;
@@ -413,7 +413,7 @@ namespace LuckYicha
                 return;
             }
             nowPhone = r.Next(allPhone.Count);
-            phoneLab.Text = allPhone[nowPhone][0];
+            phoneLab.Text = allPhone[nowPhone][0] + " " + allPhone[nowPhone][1];
 
             //phoneLab.Text = "祝  你  幸  运 !";
 
@@ -484,12 +484,8 @@ namespace LuckYicha
             showState(ranks[nowRank]);
             allPhone.RemoveAt(nowPhone);
 
-            areaLab.Text = "           ";
             phoneLab.Text = "祝  你  幸  运 !";
-
             startEndLab.Text = "开始";
-            areaLab.Text = "           ";
-
 
             reStartLab.Enabled = false;
             conStartLab.Enabled = false;
@@ -517,7 +513,7 @@ namespace LuckYicha
             startEndLab.Text = "开始";
 
             phoneLab.Text = "祝  你  幸  运 !";
-            areaLab.Text = "           ";
+            //areaLab.Text = "           ";
 
 
             reStartLab.Enabled = false;
@@ -558,26 +554,6 @@ namespace LuckYicha
                         lp += " | " + p ;
 
                     i++;
-                    /*
-                    if (i == 0)
-                    {
-                        lp += p;
-                    }
-                    else if (i % 4 == 0)
-                    {
-                        lp += "\r\n" + p;
-                    }
-                    else if (i % 2 == 0 && i > 0)
-                    {
-                        lp += " " + p;
-    
-                    }else if (i % 2 == 1)
-                    {
-                        lp += " | " + p;
-                    }
-                 
-                    i++;
-                    */
                 }
                 
                 lp += "\r\n";

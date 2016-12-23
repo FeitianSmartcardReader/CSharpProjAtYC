@@ -115,7 +115,7 @@
             // areaLab
             // 
             this.areaLab.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.areaLab.AutoSize = true;
+            this.areaLab.AutoSize = false;
             this.areaLab.BackColor = System.Drawing.Color.Transparent;
             this.areaLab.Font = new System.Drawing.Font("STFangsong", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.areaLab.ForeColor = System.Drawing.Color.Gold;
@@ -123,6 +123,7 @@
             this.areaLab.Name = "areaLab";
             this.areaLab.Size = new System.Drawing.Size(0, 36);
             this.areaLab.TabIndex = 23;
+            //this.areaLab.Text = "           ";
             // 
             // timer1
             // 
@@ -177,7 +178,7 @@
             this.luckListLab.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.luckListLab.AutoSize = true;
             this.luckListLab.BackColor = System.Drawing.Color.Transparent;
-            this.luckListLab.Font = new System.Drawing.Font("LiSu", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.luckListLab.Font = new System.Drawing.Font("LiSu", 16.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.luckListLab.ForeColor = System.Drawing.Color.Gold;
             this.luckListLab.Location = new System.Drawing.Point(830, 660);
             this.luckListLab.Name = "luckListLab";
@@ -264,7 +265,7 @@
             this.luckPeopleLab.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.luckPeopleLab.AutoSize = true;
             this.luckPeopleLab.BackColor = System.Drawing.Color.Transparent;
-            this.luckPeopleLab.Font = new System.Drawing.Font("Microsoft YaHei", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.luckPeopleLab.Font = new System.Drawing.Font("Microsoft YaHei", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.luckPeopleLab.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.luckPeopleLab.Location = new System.Drawing.Point(25, 96);
             this.luckPeopleLab.Name = "luckPeopleLab";
